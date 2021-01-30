@@ -9,8 +9,8 @@ let raceNumber = Math.floor(Math.random()*1000)
 // create random race number
 console.log(raceNumber);
 
-let regEarly = true;
-let runnerAge = 21;
+let regEarly = false;
+let runnerAge = 13;
 
 if (regEarly === true && runnerAge > 18 ) {
     raceNumber += 1000;
@@ -21,6 +21,8 @@ if (runnerAge > 18 && regEarly) {
 } else {
     if (runnerAge > 18 && !regEarly) {
         console.log(`Runner ${raceNumber} will start at 11:00 AM`);
+    } else {
+        console.log(`Runner ${raceNumber} will start at 12:30 PM`)
     }
 }
 
